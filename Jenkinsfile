@@ -1,4 +1,4 @@
-node('notnetcore'){
+node('dotnetcore'){
 	stage('SCM'){
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/marsshan2018']]])
 	}
